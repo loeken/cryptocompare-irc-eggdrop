@@ -12,6 +12,7 @@ sudo dnf install tcl-devel openssl-devel
 sudo yum install tcl-devel openssl-devel
 
 ### compile eggdrop 
+```
 cd <the root of this github repository folder>
 wget ftp://ftp.eggheads.org/pub/eggdrop/GNU/eggdrop1.8-latest.tar.gz
 tar xvfz eggdrop1.8-latest.tar.gz
@@ -24,6 +25,7 @@ make sslcert DEST=../eggdrop_compiled
 make install DEST=../eggdrop_compiled
 cd ../eggdrop_compiled
 openssl genrsa -out eggdrop.key 4096
+```
 
 
 ### edit config
